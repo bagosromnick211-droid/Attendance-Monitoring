@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Attendance Monitoring v10
 
 Flutter + Supabase attendance monitoring application.
@@ -13,3 +14,6 @@ Start with **[`V10_DASHBOARD_SETUP.md`](V10_DASHBOARD_SETUP.md)** to install the
 - The previous source architecture is explained in `ARCHITECTURE.md`
 
 **Security:** use only the publishable API key inside Flutter, never the service-role/secret key. The deletion function verifies the signed-in user server-side.
+=======
+# Attendance-Monitoring
+>>>>>>> 792f82d28133ee72652718d8a451bcaf3705d5bc
