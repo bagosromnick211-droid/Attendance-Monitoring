@@ -1,0 +1,29 @@
+name: attendance_monitoring
+description: "Attendance Monitoring App with Supabase and Google Auth"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+# Compatibility workaround for the app_links 6.4.1 Android Gradle failure:
+# "Could not get unknown property 'flutter'" / "compileSdkVersion is not specified".
+# Supabase uses app_links for email confirmation and OAuth callback URLs.
+# Pin the transitive dependency until the Android toolchain is upgraded together.
+dependency_overrides:
+  app_links: 6.4.0
